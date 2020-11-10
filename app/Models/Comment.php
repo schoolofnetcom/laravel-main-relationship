@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Comment extends Model
 {
     use HasFactory;
+
+    // ONE TO MANY (REVERSE)
+    public function artigo() {
+        return $this->belongsTo(Artigo::class);
+    }
 }

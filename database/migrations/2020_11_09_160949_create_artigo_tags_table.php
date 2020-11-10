@@ -6,11 +6,16 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateArtigoTagsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
+    // artigo_id | tag_id
+
+    //     2           2
+    //     2           3
+    //     3           2
+    //     4           2
+    //     5           1
+    //     6           1
+
     public function up()
     {
         Schema::create('artigo_tags', function (Blueprint $table) {
